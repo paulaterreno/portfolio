@@ -3,55 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles/normalizer.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Paula Terreno | Portfolio </title>
 </head>
 <body>
     <header class="header-container">
-        <img src="./recursos/PNG/symbol3.png" alt="happy face" width="50px">
-    <nav>
-        <ul class="menu-container">
-            <li class="link-a"><a href="index.html">Home</a></li>
-            <li class="link-a"><a href="./views/projects.html">Projects</a></li>
-            <li class="link-a"><a href="./views/contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <!-- <img src="./resources/PNG/symbol3.png" alt="symbol"> -->
+        <nav>
+            <img src="./resources/PNG/symbol3.png" alt="symbol" height="30px">
+            <ul class="menu-container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./views/projects.html">Projects</a></li>
+                <li><a href="./views/contact.html">Contact</a></li>
+            </ul>
+         </nav>
     </header>
-    <section class="hero">
-        <div class="presentation">
-            <div class="hero-photo"><img src="./recursos/paula.png" alt="Paula" height="600px"></div>
-            <div class="hello">
+    <main class="hero">
+            <img src="./resources/paula.png" alt="Paula" width="150px">
+            <div class="presentation">
             <div class="hello-world"><h1 >Hello World!</h1></div>
             <div class="im-paula"><h2>I'm Paula Terreno</h2></div>
             <div class="f-end"><h3>Front-end Developer</h3></div>
             </div>
+    </main>
+    <section class="about-me-container">
+        <div class="section-title">
+            <h2>About me</h2>
+            <img src="./resources/PNG/symbol2.png" alt="icon" width="20px">
+        </div>
+        <div class="about-me-text">
+            <h3>"Bringing ideas to life through code and creativity"</h3>
+            <p> I'm Paula from Argentina and I work as a front-end developer. My passion for creativity and design drives everything I do.
+            I have a deep understanding of user behavior, accessibility, and interactivity to ensure a seamless experience across devices.
+            Keen eye for details, color theory, and modern UI/UX trends.
+            </p>
         </div>
     </section>
     <section class="stack-container">
-        <h2>My Stack</h2>
-        <div class="my-stack">
-        <img src="./recursos/PNG/html.png" alt="HTML" width="100px">
-        <img src="./recursos/PNG/css.png" alt="CSS" width="100px">
-        <img src="./recursos/PNG/javascript.png" alt="javascript" width="100px">
-        <img src="./recursos/PNG/react.png" alt="react" width="100px">
+        <div class="section-title">
+            <h2>My Stack</h2>
+            <img src="./resources/PNG/symbol2.png" alt="icon" width="20px"> 
         </div>
+        <div class="card-stack">
+            <div class="stack-image">
+                <img src="./resources/PNG/skills/html.png" alt="HTML" height="75px">
+            </div>
+            <div class="stack-title">
+                <h4>HTML 5</h4>
+            </div>
+            <div class="stack-description">
+                <p>Solid foundation in HTML enabling me to create clean, efficient and visually appealing web pages.</p>
+            </div>
+        </div>
+        <!-- <div class="card-stack">
+            <div class="stack-image">
+                <img src="./resources/PNG/skills/css.png" alt="css" height="75px">
+            </div>
+            <div class="stack-title">
+                <h4>CSS 3</h4>
+            </div>
+            <div class="stack-description">
+                <p>Focus on writing modular CSS to ensure the maintainability and scalability of my projects.</p>
+            </div>
+        </div>
+        <div class="card-stack">
+            <div class="stack-image">
+                <img src="./resources/PNG/skills/js.png" alt="js" height="75px">
+            </div>
+            <div class="stack-title">
+                <h4>JAVASCRIPT</h4>
+            </div>
+            <div class="stack-description">
+                <p>Engaging and creating elements that users can intercat with</p>
+            </div>
+        </div>
+        <div class="card-stack">
+            <div class="stack-image">
+                <img src="./resources/PNG/skills/react.png" alt="react" height="75px">
+            </div>
+            <div class="stack-title">
+                <h4>REACT</h4>
+            </div>
+            <div class="stack-description">
+                <p>Library of preference for building dynamic user interfaces</p>
+            <div> 
+        </div> -->
     </section>
-    <section>
-        <h2>Expertise</h2>
-        <div class="web--container"> </div>
-        <p><h3>Web Development</h3></p>
-        <p><h3>Graphic Design</h3></p>
-        <p><h3>UX|UI</h3></p>
-        <p><h3>Scrum</h3></p>
-        p
-    </section>
-<footer>
-    <p>mpaulat.design@gmail.com</p>
-    <p>+54 3517603941</p>
-    <p>Argentina,CBA.</p>
-</footer>
+    <footer class="footer-container">
+        <div class="work-container">
+            <div class="footer-msj"><h5>LETS WORK TOGHETER</h5></div>
+            <div class="footer-img"> <img src="./resources/PNG/symbol1.png" alt="happy face" height="50px"></div>
+        </div>
+        <div class="footer-contact">
+            <p>mpaulat.design@gmail.com </p>
+            <p>+54 3517603941  </p>
+            <p>Argentina,CBA.  </p> 
+        </div>
+    </footer>
 </body>
-</html>
+</html> 

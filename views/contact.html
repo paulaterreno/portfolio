@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/normalizer.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Contact Me</title>
+</head>
+<body>
+    <header class="header-container">
+        <img src="../resources/PNG/symbol3.png" alt="happy face" width="50px">
+        <nav>
+            <ul class="menu-container">
+                <li class="link-a"><a href="index.html">Home</a></li>
+                <li class="link-a"><a href="./views/projects.html">Projects</a></li>
+                <li class="link-a"><a href="./views/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section class="contact">
+       <p><h1>Get in Touch</h1></p>
+        <form class="contact-form" method="post"> <!--PENDIENTE CONF METODOS-->
+            <label for="fname">Your Name</label>
+                <input type="text" id="name" name="yourname" placeholder="Your Name">
+            <label for="phone">Phone Number</label>
+                <input type="number" id="phone" name="phonenumber" placeholder="Phone Number">
+            <label for="text">Your Email</label>
+                <input type="email" id="email" name="youremail" placeholder="Your email">
+            <label for="subject">Subject</label>
+                <textarea name="subject" id="subject" placeholder="Write somenthing" style="height:200px">
+                </textarea>
+            <input type="submit" value="submit">
+        </form>
+    </section>
+
+
+</body>
+</html>
