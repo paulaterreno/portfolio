@@ -1,0 +1,151 @@
+/* .hero {
+    width: 90vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    } */
+    
+    /* section .presentation {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+    }  */
+    
+    /* .hello-world {
+    font-size: 12px; height: 20px; padding-bottom: 15px;}
+    
+    .im-paula {font-size: 10px;
+    height: 15px; padding-bottom: 10px}
+    
+    .f-end {color: #42d49c; font-size: 10px; 
+    height: fit-content;}  */
+    
+    
+    /*---------ABOUT ME-------*/
+    
+       /* section div:not(.about-me-container) {
+        height: 100px;
+        width: 100vw;
+        padding: 5%;
+        margin: 0;
+        /*especificidad para backgroundcolor background-color: rgba(21, 21, 21, 0.884); 
+    }
+    
+    
+    section .about-me-text {
+        width: 80vw;
+        font-size: 70%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    } */
+    
+    /*---------STACK-------*/
+    
+    
+    /* section .stack-container {
+    height: 900px;
+    }
+    
+    
+    section .card-stack {
+    height: 75px;
+    box-shadow: 2px 2px 8px 4px #b6b6b5; 
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px 4px #b6b6b5;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .html-container {
+        padding:0;
+        display:flex;
+        flex-direction: column;
+    }
+    
+    
+     .stack-image {
+        width: auto;
+        height: 50px;
+        padding: 0;
+    }
+    
+    h4  .stack-title {
+        width: 20%;
+        /*height: 30px;*/
+        /* font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        padding: 0;
+    }
+    
+      p .stack-description  {
+        font-size: 12px;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .stack-description p {
+        margin: 0;
+        padding: 0;
+       
+    }  */
+    
+    /*---------FOOTER-------
+    
+    .footer-container {
+        height: 100px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center; 
+        background-image: url(../resources/PNG/pattern.png);
+    }
+    
+    .work-container {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-msj {
+        color: #42d49c;
+        font-size: 20px;
+        width: 20px
+    }
+    
+     .footer-contact {
+        height: 20px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    .footer-contact p {
+        font-size: 9px;
+        color: #42d49c;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    */

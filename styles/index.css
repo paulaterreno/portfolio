@@ -1,18 +1,24 @@
 /*ESTILOS REUTILIZABLES EN VISTAS */
 body{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+
     background-color: #202020;
 }
 
-h1,h2 {color:#42d49c ;}
+h1,h2,h5 {color:#42d49c ;}
 
 h3,h4, p {color: #f2f2f2;}
 
-section .section-title {
+
+.section-title {
     height: 50px;
+    width: 90%vw;
     display: inline-block;
     flex-direction:row;
+    font-size: 25px;
+    opacity: .5; /*efectos para titulos*/
 }
 
 /*---------HEADER NAV--------*/
@@ -20,6 +26,10 @@ section .section-title {
  .header-container {
     height: 30px;
     width: 100vw;
+    /*position: static; agregar bckground color. ver
+    si hay q agregar otra propiedad para que quede
+    ADELANTE Y ESTATICO*/
+
 }
 
 nav {
@@ -34,7 +44,7 @@ nav {
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
  }
 
  li {
@@ -49,142 +59,154 @@ a:visited {color: #42d49c;}
 
 a:hover {color: #f2f2f2;}
 
-/*---------MEDIA QUERIES--------*/
+ .section-title  { /*Estilos titulos de seccion*/
+    padding: 5%;
+    display: inline-block;
+    width: 80%vw;
+}
 
-/*Propiedades para CELULAR, barra de navegacion*/
-@media (min-width: 320px) and (max-width: 768px) { 
-    /*nav {
-       background-color : blue;
-    }
-    
-    .header-container{
-        width: 100vw;
-    }*/
-}
-/*Propiedades para TABLET, barra de navegacion*/
-@media (min-width: 768px) and (max-width: 1024px) {
-    /*nav {
-        background-color: darkorchid;
-    }*/
-}
-/*Propiedades para ESCRITORIO, barra de navegacion*/
-@media (min-width: 1024px) and (max-width: 1920px){
-    /*nav {
-        background-color: yellow;
-    }*/
-} 
 
 /*---------HERO-------*/
 
-.hero {
-width: 90vw;
-padding-left: 15px;
-padding-right: 15px;
-padding-top: 30px;
-padding-bottom: 30px;
-display: flex;
-flex-direction: row-reverse;
-justify-content: space-between;
+ .hero {
+    height: 250px;
+    width: 60%vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-main .presentation {
-width: 100%;
-display: flex;
-flex-direction: column;
-align-content: center;
-justify-content: center;
-} 
+.hero img {
+padding: 0;
 
-.hello-world {font-size: 12px;
-height: 20px; padding-bottom: 15px;}
+}
 
-.im-paula {font-size: 10px;
-height: 15px; padding-bottom: 10px}
+.presentation {
+    height: 200px;
+    padding-left: 20px;
+    width: 30%vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-.f-end {color: #42d49c; font-size: 10px; 
-height: fit-content;} 
+.hello-world {
+    height: 120px;
+    width: 40%;
+    font-size: 0,8rem;
+}
 
+.im-paula {
+    height: 150px;
+    width: 200px;
+    font-size: 15px;
+    padding: 0;
+}
 
 /*---------ABOUT ME-------*/
 
-   section div:not(.about-me-container) {
-    height: 100px;
-    width: 100vw;
-    padding: 5%;
-    margin: 0;
-    /*especificidad para backgroundcolor background-color: rgba(21, 21, 21, 0.884); */
+
+.about-me-image {
+    width: 100%vw;
+    background-size: cover;
+    
 }
 
-
-section .about-me-text {
-    width: 80vw;
-    font-size: 70%;
-    text-align: left;
+.about-me-text {
+    width: 100%;
+    padding: 5;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
 }
 
-/*---------STACK-------*/
+/*---------MY STACK------*/
 
- /* section .stack-container {
-    height: 70vh;
+#stack-container { 
     display: flex;
     flex-direction: column;
-
-}  */
-
-
+    justify-content: center;
+    align-items: center;
+}
 
 .card-stack {
-height: 30px;
-width: 30px;
-padding: 0;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-background-color: rgb(24, 24, 24);
-border-radius: 15px;
-border-style: solid;
-/* box-shadow: 2px 2px 8px 4px #d3d3d1; */
+    height: 250px;
+    margin: 20px;
+    padding: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px 4px #42d49cd3; 
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
 }
 
- section div .stack-image {
-    width: auto;
-    height: 75px;
+.stack-title {
     padding: 0;
+    font-weight: bold;
+    height: 10px;
 }
 
- section div .stack-title {
-    width: 20%;
-    height: 40px;
-    font-size: 17px;
-    font-weight: 700;
+.stack-description {
+    font-size: 14px;
     text-align: center;
+
+}
+
+/*---------WORK------*/
+
+#work-container {
+    width: 100%vw;
+    height: 250px;
+    margin-top: 80px;
+    background-image: url(/resources/PNG/1x/black\ background.png);
+}
+
+#my-work {
+    padding: 50px;
+    width: 80%vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 .my-work-title {
+    opacity: .7; /*efectos para titulos*/
     padding: 0;
 }
 
-  section div .stack-description  {
-    font-size: 12px;
+.my-work-title {
+    font-size: 30px;
+}
+
+
+button {
+    box-shadow: 1px 1px 4px 2px #42d49cd3; 
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
     text-align: center;
-    padding: 3;
+    color: #f2f2f2;
+    height: 50px;
+    width: 130px;
+    font-size: 16px;
+    padding: 10px;
 }
 
-.stack-description p {
-    margin: 0;
-    padding: 0;
-   
-}
-
-/*---------FOOTER-------*/
+/*---------FOOTER------*/
 
 .footer-container {
     height: 100px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 200px;
+    width: 100%vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +214,7 @@ border-style: solid;
     background-image: url(../resources/PNG/pattern.png);
 }
 
-.work-container {
+.info-container {
     height: 60px;
     display: flex;
     flex-direction: row;
