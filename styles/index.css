@@ -7,9 +7,9 @@ body{
     background-color: #202020;
 }
 
-h1,h2,h5 {color:#42d49c ;}
+h1,h2,h5 {color:#42d49c; margin: 2;}
 
-h3,h4, p {color: #f2f2f2;}
+h3,h4, p {color: #f2f2f2; margin: 2;}
 
 
 .section-title {
@@ -190,7 +190,7 @@ h5 .my-work-title {
 }
 
 
-button {
+.button-portfolio {
     box-shadow: 1px 1px 4px 2px #42d49cd3; 
     background-color: rgb(24, 24, 24);
     border-radius: 15px;
