@@ -12,13 +12,11 @@ h3,h4, p {color: #f2f2f2; margin: 2;}
 
 
 .section-title {
-    height: 50px;
-    width: 80%vw;
-    padding: 10px;
-    display: inline-block;
-    flex-direction:row;
-    font-size: 25px;
-    opacity: .5; /*efectos para titulos*/
+width: 50%;
+font-size: 25px;
+opacity: .5; /*efectos para titulos*/
+padding: 5%;
+
 }
 
 /*---------HEADER NAV--------*/
@@ -39,6 +37,11 @@ nav {
     margin: 5px;
 }
 
+nav img {
+    height: 30px;
+}
+
+
 .menu-container {
     height: 20px;
     margin: 0;
@@ -52,12 +55,44 @@ nav {
     padding: 5px;
 }
 
+@media screen and (min-width: 768px) {
+    nav img {
+        height: 50px;
+       }
+    .menu-container {
+        width: 30%;
+        font-size: 1.5em;
+        align-self: center;
+    }
+
+   .header-container {
+    height: 50px;
+   } 
+}
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+    nav img {
+        height: 80px;
+       }
+    .menu-container {
+        width: 30%;
+        font-size: 1.9em;
+        align-self: center;
+    }
+
+   .header-container {
+    height: 50px;
+   } 
+}
+
 
 a:link {color: #42d49c; text-decoration: none;}
 
 a:visited {color: #42d49c;}
 
 a:hover {color: #f2f2f2;}
+
 
 /*---------PROJECTS--------*/
 
@@ -140,6 +175,8 @@ a:hover {color: #f2f2f2;}
     height: 100px;
     width: 100%vw;
     margin-top: 100px;
+    padding-right: 1%;
+    padding-left: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -13,12 +13,10 @@ h3,h4, p {color: #f2f2f2; margin: 2;}
 
 
 .section-title {
-    height: 50px;
-    width: 90%vw;
-    display: inline-block;
-    flex-direction:row;
+    width: 50%;
     font-size: 25px;
     opacity: .5; /*efectos para titulos*/
+    padding: 5%;
 }
 
 /*---------HEADER NAV--------*/
@@ -39,6 +37,11 @@ nav {
     margin: 5px;
 }
 
+nav img {
+    height: 30px;
+}
+
+
 .menu-container {
     height: 20px;
     margin: 0;
@@ -52,6 +55,37 @@ nav {
     padding: 5px;
 }
 
+@media screen and (min-width: 768px) {
+    nav img {
+        height: 50px;
+       }
+    .menu-container {
+        width: 30%;
+        font-size: 1.5em;
+        align-self: center;
+    }
+
+   .header-container {
+    height: 50px;
+   } 
+}
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+    nav img {
+        height: 80px;
+       }
+    .menu-container {
+        width: 30%;
+        font-size: 1.9em;
+        align-self: center;
+    }
+
+   .header-container {
+    height: 50px;
+   } 
+}
+
 
 a:link {color: #42d49c; text-decoration: none;}
 
@@ -59,20 +93,14 @@ a:visited {color: #42d49c;}
 
 a:hover {color: #f2f2f2;}
 
- .section-title  { /*Estilos titulos de seccion*/
-    padding: 5%;
-    display: inline-block;
-    width: 80%vw;
-}
+
 
 
 /*---------HERO-------*/
 
  .hero {
     height: 250px;
-    width: 60%vw;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
     padding-top: 50px;
     display: flex;
     flex-direction: row;
@@ -81,44 +109,61 @@ a:hover {color: #f2f2f2;}
 }
 
 .hero img {
+width: auto;
+height: 100%; /*manera de controlar la imagen con medida proporcional */
 padding: 0;
+align-self: baseline;
 
 }
 
-.presentation {
-    height: 200px;
-    padding-left: 20px;
-    width: 30%vw;
+.presentation  {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 0.9rem;
 }
 
-.hello-world {
-    height: 120px;
-    width: 40%;
-    font-size: 0,8rem;
+.presentation h1,h2,h3 {
+    margin: 0;
 }
 
-.im-paula {
-    height: 150px;
-    width: 200px;
-    font-size: 15px;
-    padding: 0;
+/*tablet*/
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+    
+    .presentation {
+    font-size: 1.6rem;
+    }
+    .hero img {
+        width: auto;
+        height: 400px;
+    }
 }
 
-/*---------ABOUT ME-------*/
-
-
-.about-me-image {
-    width: 100%vw;
-    background-size: cover;
+/*desktop*/
+@media screen and (min-width: 1024px) {
+    .hero {
+        height: 600px;
+    }
+    
+    .presentation {
+    font-size: 1.9rem;
+    }
+    .hero img {
+        width: auto;
+        height: 600px;
+    }
     
 }
 
-.about-me-text {
+
+/*---------ABOUT ME-------*/
+
+#aboutme-container {
     width: 100%;
-    padding: 5;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -126,14 +171,33 @@ padding: 0;
     align-items: center;
 }
 
+.about-me-image img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.about-me-text {
+    width: 90%;
+    padding: 2%;
+    margin: 5%;
+
+}
+
+.about-me-text h3 {
+    color: #42d49c;
+}
+
+
 /*---------MY STACK------*/
 
 #stack-container { 
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .card-stack {
     height: 250px;
@@ -208,6 +272,8 @@ h5 .my-work-title {
     height: 100px;
     width: 100%vw;
     display: flex;
+    padding-right: 2%;
+    padding-left: 1%;
     flex-direction: column;
     justify-content: center;
     align-content: center; 
